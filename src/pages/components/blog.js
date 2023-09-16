@@ -1,0 +1,230 @@
+import Divider from "./divider";
+
+const posts = [
+  {
+    id: 1,
+    title: "Boost your conversion rate",
+    href: "#",
+    description:
+      "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
+    imageUrl:
+      "https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80",
+    date: "Mar 16, 2020",
+    datetime: "2020-03-16",
+    author: {
+      name: "Michael Foster",
+      imageUrl:
+        "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+    },
+  },
+  {
+    id: 1,
+    title: "Boost your conversion rate",
+    href: "#",
+    description:
+      "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
+    imageUrl:
+      "https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80",
+    date: "Mar 16, 2020",
+    datetime: "2020-03-16",
+    author: {
+      name: "Michael Foster",
+      imageUrl:
+        "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+    },
+  },
+  {
+    id: 1,
+    title: "Boost your conversion rate",
+    href: "#",
+    description:
+      "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
+    imageUrl:
+      "https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80",
+    date: "Mar 16, 2020",
+    datetime: "2020-03-16",
+    author: {
+      name: "Michael Foster",
+      imageUrl:
+        "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+    },
+  },
+  {
+    id: 1,
+    title: "Boost your conversion rate",
+    href: "#",
+    description:
+      "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
+    imageUrl:
+      "https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80",
+    date: "Mar 16, 2020",
+    datetime: "2020-03-16",
+    author: {
+      name: "Michael Foster",
+      imageUrl:
+        "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+    },
+  },
+  {
+    id: 1,
+    title: "Boost your conversion rate",
+    href: "#",
+    description:
+      "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
+    imageUrl:
+      "https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80",
+    date: "Mar 16, 2020",
+    datetime: "2020-03-16",
+    author: {
+      name: "Michael Foster",
+      imageUrl:
+        "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+    },
+  },
+  {
+    id: 1,
+    title: "Boost your conversion rate",
+    href: "#",
+    description:
+      "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
+    imageUrl:
+      "https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80",
+    date: "Mar 16, 2020",
+    datetime: "2020-03-16",
+    author: {
+      name: "Michael Foster",
+      imageUrl:
+        "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+    },
+  },
+  // More posts...
+];
+
+export default function Blog() {
+  return (
+    <div className="bg-white pt-8 ">
+      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        {/* <div className="mx-auto max-w-2xl text-center">
+          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+            From the blog
+          </h2>
+          <p className="mt-2 text-lg leading-8 text-gray-600">
+            Learn how to grow your business with our expert advice.
+          </p>
+        </div> */}
+        {/* Big post */}
+        <Divider />
+        {/* News poster */}
+        <section
+          aria-labelledby="featured-heading"
+          className="relative mt-16 overflow-hidden rounded-lg lg:h-96"
+        >
+          <div className="absolute inset-0">
+            <img
+              src="https://tailwindui.com/img/ecommerce-images/category-page-01-featured-collection.jpg"
+              alt=""
+              className="h-full w-full object-cover object-center"
+            />
+          </div>
+          <div aria-hidden="true" className="relative h-96 w-full lg:hidden" />
+          <div aria-hidden="true" className="relative h-32 w-full lg:hidden" />
+          <div className="absolute inset-x-0 bottom-0 rounded-bl-lg rounded-br-lg bg-black bg-opacity-75 p-6 backdrop-blur backdrop-filter sm:flex sm:items-center sm:justify-between lg:inset-x-auto lg:inset-y-0 lg:w-96 lg:flex-col lg:items-start lg:rounded-br-none lg:rounded-tl-lg">
+            <div>
+              <h2
+                id="featured-heading"
+                className="text-xl font-bold text-white"
+              >
+                Now crisis-hit Islami Bank lends to AnonTex
+              </h2>
+              <p className="mt-1 text-sm text-gray-300">
+              Cash-strained Islami Bank Bangladesh has approved a Tk 700 crore loan to a concern of AnonTex Group, one of the five large borrowers of Janata Bank that has been enjoying undue facilities despite...
+              </p>
+            </div>
+            <a
+              href="#"
+              className="mt-6 flex flex-shrink-0 items-center justify-center rounded-md border border-white border-opacity-25 bg-white bg-opacity-0 px-4 py-3 text-base font-medium text-white hover:bg-opacity-10 sm:ml-8 sm:mt-0 lg:ml-0 lg:w-full"
+            >
+              View the details
+            </a>
+          </div>
+        </section>
+        {/* News poster End */}
+        <div className="flex-shrink max-w-full w-full lg:w-1/2 pb-1  lg:pb-0 lg:pr-1">
+          {/* <div className="relative hover-img max-h-96 overflow-hidden">
+            <a href="#">
+              <img
+                src={
+                  "https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80"
+                }
+                alt=""
+                className="max-w-full w-full mx-auto h-auto"
+              />
+            </a>
+            <div className="absolute px-5 pt-8 pb-5 bottom-0 w-full bg-gradient-to-t from-neutral-700 via-neutral-950/40">
+              <a href="#">
+                <h2 className="text-3xl font-bold capitalize text-white mb-3">
+                  Amazon Shoppers Are Ditching Designer Belts for This
+                  Best-Selling
+                </h2>
+              </a>
+              <p className="text-gray-100 hidden sm:inline-block">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This very helpfull for generate
+                default content..
+              </p>
+              <div className="pt-2">
+                <div className="text-gray-100">
+                  <div className="inline-block h-3 border-l-2 border-red-600 mr-2"></div>
+                  Europe
+                </div>
+              </div>
+            </div>
+          </div> */}
+        </div>
+        {/* end Big Post */}
+        <div className="mx-auto mt-16 grid max-w-2xl auto-rows-fr grid-cols-1 gap-4 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+          {posts.map((post) => (
+            <article
+              key={post.id}
+              className="relative isolate flex flex-col justify-end overflow-hidden rounded-md bg-gray-900 px-8 pb-8 pt-80 sm:pt-48 lg:pt-80"
+            >
+              <img
+                src={post.imageUrl}
+                alt=""
+                className="absolute inset-0 -z-10 h-full w-full object-cover"
+              />
+              <div className="absolute inset-0 -z-10 bg-gradient-to-t from-neutral-700 via-neutral-950/20" />
+              <div className="absolute inset-0 -z-10 rounded-md ring-1 ring-inset ring-gray-900/10" />
+
+              <div className="flex flex-wrap items-center gap-y-1 overflow-hidden text-sm leading-6 text-gray-300">
+                <time dateTime={post.datetime} className="mr-8">
+                  {post.date}
+                </time>
+                <div className="-ml-4 flex items-center gap-x-4">
+                  <div className="inline-block h-3 border-l-2 border-red-600 "></div>
+                  <div className="text-gray-100"> Europe</div>
+                </div>
+              </div>
+              <h3 className="mt-3 text-lg font-semibold leading-6 text-white">
+                <a href={post.href}>
+                  <span className="absolute inset-0" />
+                  {post.title}
+                </a>
+              </h3>
+            </article>
+          ))}
+        </div>
+
+        {/*End  Today main news */}
+
+        {/*  */}
+
+        {/*  */}
+
+        {/* grid start */}
+
+        {/* end of grid */}
+      </div>
+    </div>
+  );
+}
