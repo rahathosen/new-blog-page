@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Divider from "./divider";
 
 const posts = [
@@ -120,9 +121,12 @@ export default function Blog() {
           className="relative mt-16 overflow-hidden rounded-lg lg:h-96"
         >
           <div className="absolute inset-0">
-            <img
-              src="https://tailwindui.com/img/ecommerce-images/category-page-01-featured-collection.jpg"
-              alt=""
+            <Image
+              src={
+                "https://tailwindui.com/img/ecommerce-images/category-page-01-featured-collection.jpg"
+              }
+              alt={""}
+              layout="fill"
               className="h-full w-full object-cover object-center"
             />
           </div>
@@ -137,7 +141,10 @@ export default function Blog() {
                 Now crisis-hit Islami Bank lends to AnonTex
               </h2>
               <p className="mt-1 text-sm text-gray-300">
-              Cash-strained Islami Bank Bangladesh has approved a Tk 700 crore loan to a concern of AnonTex Group, one of the five large borrowers of Janata Bank that has been enjoying undue facilities despite...
+                Cash-strained Islami Bank Bangladesh has approved a Tk 700 crore
+                loan to a concern of AnonTex Group, one of the five large
+                borrowers of Janata Bank that has been enjoying undue facilities
+                despite...
               </p>
             </div>
             <a
@@ -188,11 +195,13 @@ export default function Blog() {
               key={post.id}
               className="relative isolate flex flex-col justify-end overflow-hidden rounded-md bg-gray-900 px-8 pb-8 pt-80 sm:pt-48 lg:pt-80"
             >
-              <img
-                src={post.imageUrl}
-                alt=""
-                className="absolute inset-0 -z-10 h-full w-full object-cover"
-              />
+               <Image
+              src={post.imageUrl}
+              alt={""}
+              layout="fill"
+              className="absolute inset-0 -z-10 h-full w-full object-cover"
+            />
+
               <div className="absolute inset-0 -z-10 bg-gradient-to-t from-neutral-700 via-neutral-950/20" />
               <div className="absolute inset-0 -z-10 rounded-md ring-1 ring-inset ring-gray-900/10" />
 

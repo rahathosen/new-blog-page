@@ -3,20 +3,20 @@ const navigation = {
     { name: 'Marketing', href: '#' },
     { name: 'Analytics', href: '#' },
     { name: 'Commerce', href: '#' },
-    { name: 'Insights', href: '#' },
+    { name: 'News', href: '#' },
   ],
   support: [
     { name: 'Pricing', href: '#' },
     { name: 'Documentation', href: '#' },
-    { name: 'Guides', href: '#' },
-    { name: 'API Status', href: '#' },
+    { name: 'Documentation', href: '#' },
+    { name: 'Documentation', href: '#' },
   ],
   company: [
     { name: 'About', href: '#' },
     { name: 'Blog', href: '#' },
+    { name: 'Documentation', href: '#' },
     { name: 'Jobs', href: '#' },
-    { name: 'Press', href: '#' },
-    { name: 'Partners', href: '#' },
+    { name: 'Jobs', href: '#' },
   ],
   legal: [
     { name: 'Claim', href: '#' },
@@ -99,7 +99,7 @@ export default function Footer() {
           <div className="space-y-8">
           <h2 className='font-bold text-2xl'>TSand News</h2>
             <p className="text-sm leading-6 text-gray-300">
-              Making the world a better place through constructing elegant hierarchies.
+              Making the world a better place and spreading the truth everyhere.
             </p>
             <div className="flex space-x-6">
               {navigation.social.map((item) => (

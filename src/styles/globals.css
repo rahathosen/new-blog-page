@@ -4,6 +4,7 @@
 
 
 
+
 @layer base {
   body {
     @apply md:p-4 p-2 bg-white text-gray-700;
@@ -11,6 +12,42 @@
 }
 
 @layer components {
+  /* custom css start  */
+  .bg-gradient-cover {
+    background-color: transparent;
+      background-image: -webkit-linear-gradient(transparent,rgba(0,0,0,0.92));
+      background-image: linear-gradient(transparent,rgba(0,0,0,0.92));
+      background-position-y: -1px;
+  }
+  .max-h-98 {
+    max-height: 24.3rem;
+}
+.box-one > article:nth-child(1) { 
+	padding-top: 0;
+	padding-bottom: 0.125rem;
+	padding-right: 0.125rem;
+}
+.box-one > article:nth-child(2) {
+	padding-top: 0;
+	padding-bottom: 0.125rem;
+	padding-left: 0.125rem;
+}
+.box-one > article:nth-child(3) {
+	padding-top: 0.125rem;
+	padding-bottom: 0.125rem;
+	padding-right: 0.125rem;
+}
+.box-one > article:nth-child(4) {
+	padding-top: 0.125rem;
+	padding-bottom: 0.125rem;
+	padding-left: 0.125rem;
+}
+.hover-img:hover img {
+	-webkit-filter: brightness(103%) contrast(103%);
+    filter: brightness(103%) contrast(103%);
+    opacity:.99;
+}
+ /* custom css end  */
   section {
     @apply mx-auto;
   }
