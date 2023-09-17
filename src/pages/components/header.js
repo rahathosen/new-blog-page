@@ -114,8 +114,6 @@ function classNames(...classes) {
 }
 
 export default function Header() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-
   return (
     <header className="bg-white lg:sticky  shadow-md lg:top-0 lg:z-10">
       <nav
@@ -182,7 +180,7 @@ export default function Header() {
                         <p className="mt-1 text-gray-600">{item.description}</p>
                       </div>
                     </div>
-                  ))} 
+                  ))}
                 </div>
                 <div className="grid grid-cols-2 divide-x divide-gray-900/5 bg-gray-50">
                   {callsToAction.map((item) => (

@@ -1,10 +1,8 @@
 import Image from "next/image";
 
-
-
 export default function NewsGridAdd() {
   return (
-    <div classNameNameName="bg-white">
+    <div className="bg-white">
       <div class="bg-white">
         {/* <!-- block news --> */}
         <div class="xl:container mx-auto px-3 sm:px-4 xl:px-2">

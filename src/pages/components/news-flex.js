@@ -93,7 +93,7 @@ const posts = [
 
 export default function NewsFlex() {
   return (
-    <div classNameName="bg-white">
+    <div className="bg-white">
       <div className="bg-white py-6">
         <div className="xl:container mx-auto px-3 sm:px-4 xl:px-2">
           <div className="flex flex-row flex-wrap">

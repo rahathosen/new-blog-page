@@ -23,10 +23,10 @@ export default function Divider() {
         <div className="w-full  border-gray-300" />
       </div>
       <div className="relative flex items-center justify-between">
-          <h2 class="text-black lg:text-3xl text-xl font-bold">
-            <span class="inline-block lg:h-6 h-4 lg:border-l-4 border-l-[3px] border-red-600 mr-2"></span>
-            Asian
-          </h2>
+        <h2 class="text-black lg:text-3xl text-xl font-bold">
+          <span class="inline-block lg:h-6 h-4 lg:border-l-4 border-l-[3px] border-red-600 mr-2"></span>
+          Asian
+        </h2>
         <Link
           href={"#"}
           className="inline-flex items-center gap-x-1.5 rounded-full bg-white px-3 text-sm lg:text-base font-semibold text-gray-900 "
