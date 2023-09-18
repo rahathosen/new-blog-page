@@ -114,6 +114,13 @@ function classNames(...classes) {
 }
 
 export default function Header() {
+
+  const [isSearchVisible, setSearchVisible] = useState(false);
+
+  const toggleSearch = () => {
+    setSearchVisible(!isSearchVisible);
+  };
+
   return (
     <header className="bg-white lg:sticky  shadow-md lg:top-0 lg:z-10">
       <nav
@@ -398,6 +405,9 @@ export default function Header() {
             </Transition>
           </Popover>
           {/* desktop search bar */}
+
+
+          
           <Link href="/search">
             <svg
               xmlns="http://www.w3.org/2000/svg"

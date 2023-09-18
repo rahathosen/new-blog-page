@@ -21,6 +21,7 @@ export default function Home() {
     >
      <Nav/>
      <Header/> 
+     {/* <Test/>  */}
      <HighlightNews/>
      <NewsGrid/>
      <NewsGridSecond/>
@@ -28,7 +29,6 @@ export default function Home() {
      <NewsFlex/>
      <NewsFlexSecond/>
      <NewsFlexThird/>
-     {/* <Test/>  */}
       <SectionLessImage/>
      <Blog/>
      <Footer/>
