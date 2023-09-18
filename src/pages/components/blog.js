@@ -103,22 +103,12 @@ const posts = [
 
 export default function Blog() {
   return (
-    <div className="bg-white pt-8 ">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        {/* <div className="mx-auto max-w-2xl text-center">
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            From the blog
-          </h2>
-          <p className="mt-2 text-lg leading-8 text-gray-600">
-            Learn how to grow your business with our expert advice.
-          </p>
-        </div> */}
-        {/* Big post */}
-        <Divider />
-        {/* News poster */}
+    <div className="bg-white dark:bg-[#040D12]  mb-4 rounded-b-lg pb-4 ">
+      <Divider />
+      <div className="mx-auto max-w-7xl px-4 lg:px-2">
         <section
           aria-labelledby="featured-heading"
-          className="relative mt-16 overflow-hidden rounded-lg lg:h-96"
+          className="relative  overflow-hidden rounded-lg lg:h-96"
         >
           <div className="absolute inset-0">
             <Image
@@ -155,41 +145,11 @@ export default function Blog() {
             </a>
           </div>
         </section>
-        {/* News poster End */}
         <div className="flex-shrink max-w-full w-full lg:w-1/2 pb-1  lg:pb-0 lg:pr-1">
-          {/* <div className="relative hover-img max-h-96 overflow-hidden">
-            <a href="#">
-              <img
-                src={
-                  "https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80"
-                }
-                alt=""
-                className="max-w-full w-full mx-auto h-auto"
-              />
-            </a>
-            <div className="absolute px-5 pt-8 pb-5 bottom-0 w-full bg-gradient-to-t from-neutral-700 via-neutral-950/40">
-              <a href="#">
-                <h2 className="text-3xl font-bold capitalize text-white mb-3">
-                  Amazon Shoppers Are Ditching Designer Belts for This
-                  Best-Selling
-                </h2>
-              </a>
-              <p className="text-gray-100 hidden sm:inline-block">
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This very helpfull for generate
-                default content..
-              </p>
-              <div className="pt-2">
-                <div className="text-gray-100">
-                  <div className="inline-block h-3 border-l-2 border-red-600 mr-2"></div>
-                  Europe
-                </div>
-              </div>
-            </div>
-          </div> */}
+          
         </div>
         {/* end Big Post */}
-        <div className="mx-auto mt-16 grid max-w-2xl auto-rows-fr grid-cols-1 gap-4 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+        <div className="mx-auto  grid max-w-2xl auto-rows-fr grid-cols-1 gap-4 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
           {posts.map((post) => (
             <article
               key={post.id}

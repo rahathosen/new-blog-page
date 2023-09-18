@@ -90,7 +90,7 @@ export default function Nav() {
   return (
     <Disclosure
       as="header"
-      className="bg-white shadow-md  xs:sticky xs:top-0 xs:z-10"
+      className="bg-white dark:bg-[#040D12] rounded-t-lg dark:text-stone-400 shadow-lg  xs:sticky xs:top-0 xs:z-10"
     >
       {({ open }) => (
         <>
@@ -99,8 +99,12 @@ export default function Nav() {
               <div className=" hidden relative z-10 lg:flex px-2 lg:px-0">
                 <div className="flex flex-shrink-0 items-center">
                   <div className="text-sm tracking-tight">
-                    <span className="font-semibold">Wednesday</span>, September
+                  <span className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-400 font-semibold text-sm bg-clip-text text-center font-heading  tracking-[-0.02em] text-transparent drop-shadow-sm duration-300 ease-linear animate-in zoom-in-50 dark:bg-gradient-to-br dark:from-gray-100 dark:to-gray-900  md:leading-[5rem]">
+                  <span className="font-semibold ">Wednesday</span>, September
                     13, 2023
+          </span>
+                    {/* <span className="font-semibold ">Wednesday</span>, September
+                    13, 2023 */}
                   </div>
                 </div>
               </div>
@@ -109,38 +113,23 @@ export default function Nav() {
                   <div className="lg:hidden lg:relative lg:z-10 lg:ml-4 lg:items-center">
                     <button
                       type="button"
-                      className="flex-shrink-0 rounded-full bg-white p-1 text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+                      className="flex-shrink-0 rounded-full bg-white dark:bg-[#040D12] p-1 text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
                     >
                       <span className="sr-only">View notifications</span>
-                      <BellIcon className="h-6 w-6" aria-hidden="true" />
+                      <BellIcon className="h-6 w-6 " aria-hidden="true" />
+
                     </button>
                   </div>
                 </div>
               </div>
               <div className="relative z-0 flex flex-1 items-center justify-center px-2 sm:absolute sm:inset-0">
-                {/* Search */}
-                {/* <div className="w-full sm:max-w-xs">
-                  <label htmlFor="search" className="sr-only">
-                    Search
-                  </label>
-                  <div className="relative">
-                    <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
-                      <MagnifyingGlassIcon className="h-5 w-5 text-gray-400" aria-hidden="true" />
-                    </div>
-                    <input
-                      id="search"
-                      name="search"
-                      className="block w-full rounded-md border-0 bg-white py-1.5 pl-10 pr-3 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                      placeholder="Search"
-                      type="search"
-                    />
-                  </div>
-                </div> */}
-                <h2 className="font-bold text-2xl">TSand News</h2>
+                <h1 className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-400 font-bold text-2xl lg:text-3xl bg-clip-text text-center font-heading  tracking-[-0.02em] text-transparent drop-shadow-sm duration-300 ease-linear animate-in zoom-in-50 dark:bg-gradient-to-br dark:from-gray-100 dark:to-gray-900  md:leading-[5rem]">
+                The Daily Morning
+          </h1>
               </div>
               <div className="relative z-10 flex items-center lg:hidden">
                 {/* Mobile menu button */}
-                <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-gray-400  hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
                   <span className="sr-only">Open menu</span>
                   {open ? (
                     <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
@@ -149,13 +138,14 @@ export default function Nav() {
                   )}
                 </Disclosure.Button>
               </div>
+              {/* Desktop Notification button */}
               <div className="hidden lg:relative lg:z-10 lg:ml-4 lg:flex lg:items-center">
                 <button
                   type="button"
-                  className="flex-shrink-0 rounded-full bg-white p-1 text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+                  className="flex-shrink-0 rounded-full bg-white dark:bg-[#040D12] p-1 text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
                 >
                   <span className="sr-only">View notifications</span>
-                  <BellIcon className="h-6 w-6" aria-hidden="true" />
+                  <BellIcon className="h-6 w-6 " aria-hidden="true" />
                 </button>
               </div>
             </div>

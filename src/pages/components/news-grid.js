@@ -4,8 +4,8 @@ export default function NewsGrid() {
   return (
     <>
       {/* Today main news */}
-      <div className="bg-white pt-8 ">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+      <div className="bg-white dark:bg-[#040D12]">
+        <div className="mx-auto max-w-7xl ">
           <Divider />
           <section className="pt-8 grid gap-4 lg:grid-cols-4">
             <div className="violet lg:col-span-2">

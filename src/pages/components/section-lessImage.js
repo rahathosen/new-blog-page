@@ -108,22 +108,10 @@ const posts = [
 
 export default function SectionLessImage() {
   return (
-    <div className="bg-white ">
-      <div className="mx-auto max-w-7xl px-6 pt-6 lg:px-8">
-        {/* <div className="mx-auto max-w-2xl lg:mx-0">
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">From the blog</h2>
-            <p className="mt-2 text-lg leading-8 text-gray-600">
-              Learn how to grow your business with our expert advice.
-            </p>
-          </div> */}
-
+    <div className="bg-white dark:bg-[#040D12] mt-4 rounded-t-lg pt-4 mb-4 pb-4">
         <Divider />
-
-        {/* <div className="text-gray-100">
-                          <div className="inline-block h-3 border-l-2 border-red-600 mr-2"></div>
-                          Asian2
-                        </div> */}
-        <div className="mx-auto  grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-gray-200  sm:mt-16  lg:mx-0 lg:max-w-none lg:grid-cols-3">
+      <div className="mx-auto max-w-7xl px-4 lg:px-2">
+        <div className="mx-auto  grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-gray-200    lg:mx-0 lg:max-w-none lg:grid-cols-3">
           {posts.map((post) => (
             <article
               key={post.id}
@@ -141,13 +129,13 @@ export default function SectionLessImage() {
                 </a>
               </div>
               <div className="group relative">
-                <h3 className="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+                <h3 className="mt-3 text-lg font-semibold leading-6 text-gray-900 dark:text-stone-300 group-hover:text-gray-600">
                   <a href={post.href}>
                     <span className="absolute inset-0" />
                     {post.title}
                   </a>
                 </h3>
-                <p className="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">
+                <p className="mt-5 line-clamp-3 text-sm leading-6 text-gray-600 dark:text-gray-500">
                   {post.description}
                 </p>
               </div>

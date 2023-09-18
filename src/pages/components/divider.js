@@ -18,20 +18,18 @@ import { PlusIcon } from "@heroicons/react/20/solid";
 
 export default function Divider() {
   return (
-    <div className="relative bg-white">
-      <div className="absolute inset-0 flex items-center" aria-hidden="true">
-        <div className="w-full  border-gray-300" />
-      </div>
+    <div className="relative xl:container mx-auto px-3 sm:px-4 xl:px-2 py-4 bg-white dark:bg-[#040D12] ">
+        
       <div className="relative flex items-center justify-between">
-        <h2 class="text-black lg:text-3xl text-xl font-bold">
+        <h2 class="text-black dark:text-gray-400 lg:text-3xl text-xl font-bold">
           <span class="inline-block lg:h-6 h-4 lg:border-l-4 border-l-[3px] border-red-600 mr-2"></span>
           Asian
         </h2>
         <Link
           href={"#"}
-          className="inline-flex items-center gap-x-1.5 rounded-full bg-white px-3 text-sm lg:text-base font-semibold text-gray-900 "
+          className="inline-flex items-center gap-x-1.5 rounded-full bg-white dark:bg-[#040D12] px-3 text-sm lg:text-base font-semibold text-gray-900 "
         >
-          <div class="group text-gray-800 hover:text-rose-950 transition ease-in-out duration-200">
+          <div class="group text-gray-800 dark:text-gray-600 hover:text-[#5C8374] dark:hover:text-[#5C8374]  transition ease-in-out duration-200">
             See more{" "}
             <span
               aria-hidden="true"

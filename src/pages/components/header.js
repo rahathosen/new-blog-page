@@ -40,7 +40,7 @@ const navItems = [
   },
 ];
 
-const products = [
+const news = [
   {
     name: "Analytics",
     description: "Get a better understanding of your traffic",
@@ -114,7 +114,6 @@ function classNames(...classes) {
 }
 
 export default function Header() {
-
   const [isSearchVisible, setSearchVisible] = useState(false);
 
   const toggleSearch = () => {
@@ -122,38 +121,20 @@ export default function Header() {
   };
 
   return (
-    <header className="bg-white lg:sticky  shadow-md lg:top-0 lg:z-10">
+    <header className="bg-white hidden lg:flex dark:bg-[#040D12] dark:text-neutral-400 lg:sticky lg:rounded-t-lg shadow-md dark:drop-shadow-2xl lg:top-0 lg:z-10">
       <nav
         className="mx-auto  flex max-w-7xl items-center justify-center p-6 lg:px-8"
         aria-label="Global"
       >
-        {/* <div className="lg:hidden w-full pb-8">
-                  <label htmlFor="search" className="sr-only">
-                    Search
-                  </label>
-                  <div className="relative">
-                    <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
-                      <MagnifyingGlassIcon className="h-5 w-5 text-gray-400" aria-hidden="true" />
-                    </div>
-                    <input
-                      id="search"
-                      name="search"
-                      className="block w-full rounded-md border-0 bg-white py-1.5 pl-10 pr-3 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                      placeholder="Search"
-                      type="search"
-                    />
-                  </div>
-                </div> */}
-        <Popover.Group className="hidden lg:flex lg:gap-x-12">
+        <Popover.Group className="lg:flex lg:gap-x-12">
           <Popover className="relative">
-            <Popover.Button className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900">
+            <Popover.Button className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900 dark:text-neutral-400">
               News
               <ChevronDownIcon
                 className="h-5 w-5 flex-none text-gray-400"
                 aria-hidden="true"
               />
             </Popover.Button>
-
             <Transition
               as={Fragment}
               enter="transition ease-out duration-200"
@@ -163,28 +144,27 @@ export default function Header() {
               leaveFrom="opacity-100 translate-y-0"
               leaveTo="opacity-0 translate-y-1"
             >
-              <Popover.Panel className="absolute -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5">
+              <Popover.Panel className="absolute -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-xl bg-white dark:bg-[#040D12]  shadow-lg dark:drop-shadow-2xl ring-1 ring-gray-900/5">
                 <div className="p-4">
-                  {products.map((item) => (
+                  {news.map((item) => (
                     <div
                       key={item.name}
-                      className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50"
-                    >
-                      <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+                      className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50 hover:dark:bg-[#071720]">
+                      {/* <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 dark:bg-teal-950 group-hover:bg-white dark:group-hover:bg-[#040D12] ">
                         <item.icon
-                          className="h-6 w-6 text-gray-600 group-hover:text-indigo-600"
+                          className="h-6 w-6 text-gray-600  group-hover:text-indigo-600"
                           aria-hidden="true"
                         />
-                      </div>
+                      </div> */}
                       <div className="flex-auto">
                         <a
                           href={item.href}
-                          className="block font-semibold text-gray-900"
+                          className="block font-semibold text-gray-900 dark:text-neutral-400"
                         >
                           {item.name}
                           <span className="absolute inset-0" />
                         </a>
-                        <p className="mt-1 text-gray-600">{item.description}</p>
+                        <p className="mt-1 text-gray-600  dark:text-gray-500">{item.description}</p>
                       </div>
                     </div>
                   ))}
@@ -208,7 +188,7 @@ export default function Header() {
             </Transition>
           </Popover>
           <Popover className="relative">
-            <Popover.Button className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900">
+            <Popover.Button className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900 dark:text-neutral-400">
               Opinion
               <ChevronDownIcon
                 className="h-5 w-5 flex-none text-gray-400"
@@ -225,28 +205,23 @@ export default function Header() {
               leaveFrom="opacity-100 translate-y-0"
               leaveTo="opacity-0 translate-y-1"
             >
-              <Popover.Panel className="absolute -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5">
+              <Popover.Panel className="absolute -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white dark:bg-[#040D12]  shadow-lg dark:drop-shadow-2xl ring-1 ring-gray-900/5">
                 <div className="p-4">
                   {global.map((item) => (
                     <div
                       key={item.name}
-                      className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50"
+                      className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50 hover:dark:bg-[#071720]"
                     >
-                      <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
-                        <item.icon
-                          className="h-6 w-6 text-gray-600 group-hover:text-indigo-600"
-                          aria-hidden="true"
-                        />
-                      </div>
+                      
                       <div className="flex-auto">
                         <a
                           href={item.href}
-                          className="block font-semibold text-gray-900"
+                          className="block font-semibold text-gray-900 dark:text-neutral-400 "
                         >
                           {item.name}
                           <span className="absolute inset-0" />
                         </a>
-                        <p className="mt-1 text-gray-600">{item.description}</p>
+                        <p className="mt-1 text-gray-600 dark:text-gray-500">{item.description}</p>
                       </div>
                     </div>
                   ))}
@@ -274,14 +249,14 @@ export default function Header() {
             <a
               href={item.href}
               key={item}
-              className="text-sm font-semibold leading-6 text-gray-900"
+              className="text-sm font-semibold leading-6 text-gray-900 dark:text-neutral-400"
             >
               {item.name}
             </a>
           ))}
 
           <Popover className="relative">
-            <Popover.Button className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900">
+            <Popover.Button className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900 dark:text-neutral-400">
               Feature
               <ChevronDownIcon
                 className="h-5 w-5 flex-none text-gray-400"
@@ -298,28 +273,23 @@ export default function Header() {
               leaveFrom="opacity-100 translate-y-0"
               leaveTo="opacity-0 translate-y-1"
             >
-              <Popover.Panel className="absolute -left-[12rem] top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5">
+              <Popover.Panel className="absolute -left-[12rem] top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white dark:bg-[#040D12]  shadow-lg dark:drop-shadow-2xl ring-1 ring-gray-900/5">
                 <div className="p-4">
                   {global.map((item) => (
                     <div
                       key={item.name}
-                      className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50"
+                      className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50 hover:dark:bg-[#071720]"
                     >
-                      <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
-                        <item.icon
-                          className="h-6 w-6 text-gray-600 group-hover:text-indigo-600"
-                          aria-hidden="true"
-                        />
-                      </div>
+                     
                       <div className="flex-auto">
                         <a
                           href={item.href}
-                          className="block font-semibold text-gray-900"
+                          className="block font-semibold text-gray-900 dark:text-neutral-400"
                         >
                           {item.name}
                           <span className="absolute inset-0" />
                         </a>
-                        <p className="mt-1 text-gray-600">{item.description}</p>
+                        <p className="mt-1 text-gray-600 dark:text-gray-500">{item.description}</p>
                       </div>
                     </div>
                   ))}
@@ -343,7 +313,7 @@ export default function Header() {
             </Transition>
           </Popover>
           <Popover className="relative">
-            <Popover.Button className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900">
+            <Popover.Button className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900 dark:text-neutral-400">
               More
               <ChevronDownIcon
                 className="h-5 w-5 flex-none text-gray-400"
@@ -360,28 +330,23 @@ export default function Header() {
               leaveFrom="opacity-100 translate-y-0"
               leaveTo="opacity-0 translate-y-1"
             >
-              <Popover.Panel className="absolute -left-[18rem] top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5">
+              <Popover.Panel className="absolute -left-[18rem] top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white dark:bg-[#040D12]  shadow-lg dark:drop-shadow-2xl ring-1 ring-gray-900/5">
                 <div className="p-4">
                   {global.map((item) => (
                     <div
                       key={item.name}
-                      className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50"
+                      className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50 hover:dark:bg-[#071720]"
                     >
-                      <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
-                        <item.icon
-                          className="h-6 w-6 text-gray-600 group-hover:text-indigo-600"
-                          aria-hidden="true"
-                        />
-                      </div>
+                     
                       <div className="flex-auto">
                         <a
                           href={item.href}
-                          className="block font-semibold text-gray-900"
+                          className="block font-semibold text-gray-900 dark:text-neutral-400"
                         >
                           {item.name}
                           <span className="absolute inset-0" />
                         </a>
-                        <p className="mt-1 text-gray-600">{item.description}</p>
+                        <p className="mt-1 text-gray-600 dark:text-gray-500">{item.description}</p>
                       </div>
                     </div>
                   ))}
@@ -406,8 +371,6 @@ export default function Header() {
           </Popover>
           {/* desktop search bar */}
 
-
-          
           <Link href="/search">
             <svg
               xmlns="http://www.w3.org/2000/svg"

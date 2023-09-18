@@ -1,20 +1,16 @@
 import Image from "next/image";
-
+import Divider from "./divider";
 export default function NewsGridAdd() {
   return (
-    <div className="bg-white">
-      <div class="bg-white">
+    <div className="bg-white dark:bg-[#040D12] mt-4 rounded-t-lg pt-4 mb-4 pb-4">
+      <Divider/>
+      <div >
         {/* <!-- block news --> */}
         <div class="xl:container mx-auto px-3 sm:px-4 xl:px-2">
           <div class="flex flex-row flex-wrap">
             {/* <!-- Left --> */}
             <div class="flex-shrink max-w-full w-full lg:w-2/3 overflow-hidden">
-              <div class="w-full py-3">
-                <h2 class="text-black lg:text-3xl text-xl font-bold">
-                  <span class="inline-block lg:h-6 h-4 lg:border-l-4 border-l-[3px] border-red-600 mr-2"></span>
-                  Europe
-                </h2>
-              </div>
+             
               <div class="flex flex-row flex-wrap -mx-3">
                 <div class="flex-shrink max-w-full w-full sm:w-1/3 px-3 pb-3 pt-3 sm:pt-0 border-b-2 sm:border-b-0 border-dotted border-gray-100">
                   <div class="flex flex-row sm:block hover-img">

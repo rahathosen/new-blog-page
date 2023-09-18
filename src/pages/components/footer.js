@@ -93,18 +93,17 @@ const navigation = {
 
 export default function Footer() {
   return (
-    <footer
-      className="bg-black rounded-md mt-4"
-      aria-labelledby="footer-heading"
-    >
-      <h2 id="footer-heading" className="sr-only">
-        Footer
-      </h2>
-      <div className="mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-32">
+    <footer className="bg-white dark:bg-[#040D12] rounded-lg" aria-labelledby="footer-heading">
+    <h2 id="footer-heading" className="sr-only">
+      Footer
+    </h2>
+      <div className="mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-2'4 lg:px-8 lg:pt-32">
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
           <div className="space-y-8">
-            <h2 className="font-bold text-2xl">TSand News</h2>
-            <p className="text-sm leading-6 text-gray-300">
+          <h1 className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-400 font-bold text-2xl lg:text-3xl bg-clip-text  tracking-[-0.02em] text-transparent drop-shadow-sm duration-300 ease-linear animate-in zoom-in-50 dark:bg-gradient-to-br dark:from-gray-100 dark:to-gray-900  md:leading-[5rem]">
+                The Daily Morning
+          </h1>
+            <p className="text-sm leading-6 text-gray-600">
               Making the world a better place and spreading the truth everyhere.
             </p>
             <div className="flex space-x-6">
@@ -112,7 +111,7 @@ export default function Footer() {
                 <a
                   key={item.name}
                   href={item.href}
-                  className="text-gray-500 hover:text-gray-400"
+                  className="text-gray-400 hover:text-gray-500"
                 >
                   <span className="sr-only">{item.name}</span>
                   <item.icon className="h-6 w-6" aria-hidden="true" />
@@ -123,7 +122,7 @@ export default function Footer() {
           <div className="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
             <div className="md:grid md:grid-cols-2 md:gap-8">
               <div>
-                <h3 className="text-sm font-semibold leading-6 text-white">
+                <h3 className="text-sm font-semibold leading-6 text-gray-900 dark:text-gray-400">
                   Solutions
                 </h3>
                 <ul role="list" className="mt-6 space-y-4">
@@ -131,7 +130,7 @@ export default function Footer() {
                     <li key={item.name}>
                       <a
                         href={item.href}
-                        className="text-sm leading-6 text-gray-300 hover:text-white"
+                        className="text-sm leading-6 text-gray-600 hover:text-gray-900"
                       >
                         {item.name}
                       </a>
@@ -140,7 +139,7 @@ export default function Footer() {
                 </ul>
               </div>
               <div className="mt-10 md:mt-0">
-                <h3 className="text-sm font-semibold leading-6 text-white">
+                <h3 className="text-sm font-semibold leading-6 text-gray-900 dark:text-gray-400">
                   Support
                 </h3>
                 <ul role="list" className="mt-6 space-y-4">
@@ -148,7 +147,7 @@ export default function Footer() {
                     <li key={item.name}>
                       <a
                         href={item.href}
-                        className="text-sm leading-6 text-gray-300 hover:text-white"
+                        className="text-sm leading-6 text-gray-600 hover:text-gray-900"
                       >
                         {item.name}
                       </a>
@@ -159,7 +158,7 @@ export default function Footer() {
             </div>
             <div className="md:grid md:grid-cols-2 md:gap-8">
               <div>
-                <h3 className="text-sm font-semibold leading-6 text-white">
+                <h3 className="text-sm font-semibold leading-6 text-gray-900 dark:text-gray-400">
                   Company
                 </h3>
                 <ul role="list" className="mt-6 space-y-4">
@@ -167,7 +166,7 @@ export default function Footer() {
                     <li key={item.name}>
                       <a
                         href={item.href}
-                        className="text-sm leading-6 text-gray-300 hover:text-white"
+                        className="text-sm leading-6 text-gray-600 hover:text-gray-900"
                       >
                         {item.name}
                       </a>
@@ -176,7 +175,7 @@ export default function Footer() {
                 </ul>
               </div>
               <div className="mt-10 md:mt-0">
-                <h3 className="text-sm font-semibold leading-6 text-white">
+                <h3 className="text-sm font-semibold leading-6 text-gray-900 dark:text-gray-400">
                   Legal
                 </h3>
                 <ul role="list" className="mt-6 space-y-4">
@@ -184,7 +183,7 @@ export default function Footer() {
                     <li key={item.name}>
                       <a
                         href={item.href}
-                        className="text-sm leading-6 text-gray-300 hover:text-white"
+                        className="text-sm leading-6 text-gray-600 hover:text-gray-900"
                       >
                         {item.name}
                       </a>
@@ -195,8 +194,8 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="flex w-full items-center justify-between mt-16 border-t border-white/10 pt-8 sm:mt-20 lg:mt-24">
-          <p className="text-xs leading-5 text-gray-400">
+        <div className="flex w-full items-center justify-between mt-16 border-t border-gray-900/10 dark:border-gray-900/60 pt-8 sm:mt-20 lg:mt-24">
+          <p className="text-xs leading-5 text-gray-500">
             &copy; 2023 Tech Sand, Inc. All rights reserved.
           </p>
 

@@ -1,9 +1,12 @@
 import Image from "next/image";
+import Divider from "./divider";
+
 
 export default function NewsGridSecond() {
   return (
-    <div className="bg-white">
-      <div className="bg-white py-6">
+    <div>
+      <div className="bg-white dark:bg-[#040D12] mt-4 rounded-t-lg pt-4 mb-4 pb-4">
+      <Divider/>
         <div className="xl:container mx-auto px-3 sm:px-4 xl:px-2">
           <div className="flex flex-row flex-wrap">
             <div className="flex-shrink max-w-full w-full lg:w-1/2 pb-1 lg:pb-0 lg:pr-1">

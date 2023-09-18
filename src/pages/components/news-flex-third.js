@@ -1,19 +1,21 @@
 import Image from "next/image";
+import Divider from "./divider";
 
 export default function NewsFlexThird() {
   return (
-    <div className="bg-white">
+    <div className="bg-white dark:bg-[#040D12] mt-4 rounded-t-lg pt-4 mb-4 pb-4">
+      <Divider/>
       {/* <!-- block news --> */}
-      <div className="bg-gray-50 py-6">
+      <div >
         <div className="xl:container mx-auto px-3 sm:px-4 xl:px-2">
           <div className="flex flex-row flex-wrap">
             {/* <!-- post --> */}
             <div className="flex-shrink max-w-full w-full lg:w-2/3 overflow-hidden">
               <div className="w-full py-3">
-                <h2 class="text-black lg:text-3xl text-xl font-bold">
+                {/* <h2 class="text-black lg:text-3xl text-xl font-bold">
                   <span class="inline-block lg:h-6 h-4 lg:border-l-4 border-l-[3px] border-red-600 mr-2"></span>
                   Latest news
-                </h2>
+                </h2> */}
               </div>
               <div className="flex flex-row flex-wrap -mx-3">
                 <div className="flex-shrink max-w-full w-full px-3 pb-5">

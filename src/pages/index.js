@@ -13,6 +13,7 @@ import NewsGridSecond from './components/news-grid-second'
 import NewsFlexSecond from './components/news-flex-seond'
 import NewsFlexThird from './components/news-flex-third'
 import NewsGridAdd from './components/news-grid-add'
+
 const inter = Inter({ subsets: ['latin'] })
 export default function Home() {
   return (
@@ -23,7 +24,7 @@ export default function Home() {
      <Header/> 
      {/* <Test/>  */}
      <HighlightNews/>
-     <NewsGrid/>
+     {/* <NewsGrid/> */}
      <NewsGridSecond/>
      <NewsGridAdd/>
      <NewsFlex/>
