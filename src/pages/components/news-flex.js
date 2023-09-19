@@ -104,7 +104,7 @@ export default function NewsFlex() {
                 {posts.map((post) => (
                   <div
                     key={post.id}
-                    className="flex-shrink max-w-full w-full sm:w-1/3 lg:w-1/4 px-3 pb-3 pt-3 sm:pt-0 border-b-2 sm:border-b-0 border-dotted border-gray-400 dark:border-gray-900"
+                    className="flex-shrink max-w-full w-full sm:w-1/3 lg:w-1/4 px-3 pb-3 pt-3 sm:pt-0 border-b-1 sm:border-b-0 border border-gray-200  dark:border-gray-950"
                   >
                     <div className="flex flex-row sm:block hover-img">
                       <a href="">
