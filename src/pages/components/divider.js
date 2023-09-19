@@ -1,7 +1,7 @@
 import Link from "next/link";
 export default function Divider() {
   return (
-    <div className="relative xl:container mx-auto px-3 sm:px-4 xl:px-2 py-4 bg-white dark:bg-[#040D12] ">
+    <div className="relative xl:container mx-auto px-3 sm:px-4 xl:px-2 py-4 bg-stone-100 dark:bg-[#040D12] ">
         
       <div className="relative flex items-center justify-between">
         <h2 className="text-black dark:text-gray-400 lg:text-3xl text-xl font-bold">
@@ -10,9 +10,9 @@ export default function Divider() {
         </h2>
         <Link
           href={"#"}
-          className="inline-flex items-center gap-x-1.5 rounded-full bg-white dark:bg-[#040D12] px-3 text-sm lg:text-base font-semibold text-gray-900 "
+          className="inline-flex items-center gap-x-1.5 rounded-full  px-3 text-sm lg:text-base font-semibold text-gray-900 "
         >
-          <div className="group text-gray-800 dark:text-gray-400 hover:text-[#5C8374] dark:hover:text-[#5C8374]  transition ease-in-out duration-200">
+          <div className="group text-black dark:text-gray-400 hover:text-[#5C8374] dark:hover:text-[#5C8374]  transition ease-in-out duration-200">
             See more{" "}
             <span
               aria-hidden="true"

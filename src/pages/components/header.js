@@ -137,7 +137,7 @@ export default function Header() {
   };
 
   return (
-    <header className="bg-white hidden lg:flex dark:bg-[#040D12]  dark:text-neutral-400 lg:sticky lg:rounded-t-lg shadow-md dark:drop-shadow-2xl lg:top-0 lg:z-10">
+    <header className="bg-stone-100 hidden lg:flex dark:bg-[#040D12]  dark:text-neutral-400 lg:sticky lg:rounded-t-lg shadow-md dark:drop-shadow-2xl lg:top-0 lg:z-10">
       <nav
         className="mx-auto  flex max-w-7xl items-center justify-center p-6 lg:px-8"
         aria-label="Global"

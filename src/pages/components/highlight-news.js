@@ -61,13 +61,13 @@ export default function HighlightNews() {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="bg-white dark:bg-[#040D12] mt-4 rounded-lg  pt-4 mb-4 pb-4">
-      {/* Mobile menu */}
+    <div className="bg-stone-100 dark:bg-[#040D12] mt-4 rounded-lg  pt-4 mb-4 pb-4">
+     
       <main>
-        {/* Category section */}
+     
         <section>
-          <div className="mx-auto max-w-7xl">
-            <div className=" grid grid-cols-1 gap-y-2 sm:grid-cols-2 sm:grid-rows-2 sm:gap-x-6 lg:gap-4">
+          <div className="xl:container mx-auto max-w-7xl">
+            <div className=" grid grid-cols-1 gap-y-2 sm:grid-cols-2  sm:grid-rows-2 sm:gap-x-6 lg:gap-4">
               {posts.slice(0, 1).map((post) => (
                 <div
                   key={post.id}
@@ -133,9 +133,15 @@ export default function HighlightNews() {
                           {post.title}
                         </a>
                       </h3>
-                      <p aria-hidden="true" className="mt-1 text-sm text-white">
+                      <p aria-hidden="true" className="mt-1 text-sm text-white hidden lg:inline-block   ">
                         {post.description}
                       </p>
+                      <div className="pt-2">
+                        <div className="text-gray-100">
+                          <div className="inline-block h-3 border-l-2 border-red-600 mr-2"></div>
+                          {post.tag}
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>

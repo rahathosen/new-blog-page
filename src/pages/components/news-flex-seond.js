@@ -180,9 +180,8 @@ const popularPosts = [
 
 export default function NewsFlexSecond() {
   return (
-    <div className="bg-white dark:bg-[#040D12] mt-4 rounded-t-lg pt-4 mb-4 pb-4">
+    <div className="bg-stone-100 dark:bg-[#040D12] mt-4 rounded-t-lg pt-4 mb-4 pb-4">
       <Divider />
-      {/* <!-- block news --> */}
       <div>
         <div className="xl:container mx-auto px-3 sm:px-4 xl:px-2">
           <div className="flex flex-row flex-wrap">
@@ -229,7 +228,7 @@ export default function NewsFlexSecond() {
                 {posts.slice(1, 7).map((post) => (
                   <div
                     key={post.id}
-                    className="flex-shrink max-w-full w-full sm:w-1/3 px-3 pb-3 pt-3 sm:pt-0 border-b-2 sm:border-b-0 border-dotted border-gray-100"
+                    className="flex-shrink max-w-full w-full sm:w-1/3 px-3 pb-3 pt-3 sm:pt-0 border-b-2 sm:border-b-0 border-dotted border-gray-100 dark:border-gray-900"
                   >
                     <div className="flex flex-row sm:block hover-img">
                       <a href="">
@@ -244,13 +243,13 @@ export default function NewsFlexSecond() {
                         />
                       </a>
                       <div className="py-0 sm:py-3 pl-3 sm:pl-0">
-                        <h3 className="text-lg font-bold leading-tight  dark:text-gray-400 mb-2">
+                        <h3 className="text-lg font-bold leading-tight text-black  dark:text-gray-400 mb-2">
                           <a href="#">{post.title}</a>
                         </h3>
-                        <p className="hidden md:block  dark:text-gray-400 text-gray-600 leading-tight mb-1">
+                        <p className="hidden md:block  dark:text-gray-400 text-gray-800 leading-tight mb-1">
                           {post.description}
                         </p>
-                        <a className="text-gray-500  dark:text-gray-400" href="#">
+                        <a className="text-gray-800 font-medium  dark:text-gray-400" href="#">
                           <span className="inline-block h-3 border-l-2 border-red-600 mr-2"></span>
                           {post.tag}
                         </a>
@@ -262,19 +261,19 @@ export default function NewsFlexSecond() {
             </div>
             {/* <!-- right --> */}
             <div className="flex-shrink max-w-full w-full lg:w-1/3 lg:pl-8 order-first lg:order-last">
-              <div className="w-full bg-white dark:bg-[#040D12] ">
+              <div className="w-full bg-stone-100 dark:bg-[#040D12] ">
                 <div className="mb-6">
-                  <div className="p-4 bg-gray-100 dark:bg-[#071720] rounded-lg">
-                    <h2 className="text-lg font-bold dark:text-gray-400">Most Popular</h2>
+                  <div className="p-4 bg-stone-200 dark:bg-[#071720] rounded-lg">
+                    <h2 className="text-lg font-bold text-black dark:text-gray-400">Most Popular</h2>
                   </div>
                   <ul className="post-number">
                     {popularPosts.slice(0,12).map((post) => (
                       <li
                         key={post.id}
-                        className="border-b border-gray-100 dark:border-gray-900 hover:bg-gray-50 rounded-lg dark:hover:bg-[#030b10]"
+                        className="border-b border-gray-100 dark:border-gray-900 hover:bg-stone-300 rounded-lg dark:hover:bg-[#030b10]"
                       >
                         <a
-                          className="text-lg font-bold px-6 py-3 flex flex-row items-center dark:text-gray-400"
+                          className="text-lg font-bold px-6 py-3 flex flex-row items-center text-gray-800 dark:text-gray-400"
                           href="#"
                         >
                          {post.title}

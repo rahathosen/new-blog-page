@@ -67,11 +67,11 @@ const posts = [
 export default function NewsGridSecond() {
   return (
     <div>
-      <div className="bg-white dark:bg-[#040D12] mt-4 rounded-lg pt-4 mb-4 pb-4">
+      <div className="bg-stone-100 dark:bg-[#040D12] mt-4 rounded-lg pt-4 mb-4 pb-4">
         <Divider />
         <div className="xl:container mx-auto px-3 sm:px-4 xl:px-2">
           <div className="flex flex-row flex-wrap">
-            <div className="flex-shrink max-w-full w-full lg:w-1/2 pb-1 lg:pb-0 lg:pr-1">
+            <div className="flex-shrink max-w-full w-full lg:w-1/2 pb-2 lg:pb-0 lg:pr-1">
               {posts.slice(0, 1).map((post) => (
                 <div
                   key={post.id}
@@ -107,8 +107,8 @@ export default function NewsGridSecond() {
               ))}
             </div>
 {/* Article */}
-            <div className="flex-shrink max-w-full w-full lg:w-1/2">
-              <div className="box-one flex flex-row flex-wrap">
+            <div className="flex-shrink max-w-full  w-full lg:w-1/2">
+              <div className="box-one flex gap-2 sm:gap-0 flex-row flex-wrap">
               {posts.slice(1,5).map((post)=>(
                     <article key={post.id} className="flex-shrink max-w-full w-full sm:w-1/2">
 

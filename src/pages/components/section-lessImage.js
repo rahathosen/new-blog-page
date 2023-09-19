@@ -108,9 +108,9 @@ const posts = [
 
 export default function SectionLessImage() {
   return (
-    <div className="bg-white dark:bg-[#040D12] mt-4 rounded-t-lg pt-4 mb-4 pb-4">
-        <Divider />
-      <div className="mx-auto max-w-7xl px-4 lg:px-2">
+    <div className="bg-stone-100 dark:bg-[#040D12] mt-4 rounded-t-lg pt-4 mb-4 pb-4">
+    <Divider />
+      <div className="xl:container mx-auto max-w-7xl px-4 lg:px-2">
         <div className="mx-auto  grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-gray-200    lg:mx-0 lg:max-w-none lg:grid-cols-3">
           {posts.map((post) => (
             <article
@@ -123,13 +123,13 @@ export default function SectionLessImage() {
                 </time>
                 <a
                   href={post.category.href}
-                  className="relative rounded-full bg-gray-50 dark:bg-[#0c2525f8] dark:text-gray-400 px-3 py-1.5 font-medium text-gray-60  hover:bg-gray-100"
+                  className="relative rounded-full bg-white dark:bg-[#0c2525f8] dark:text-gray-400 px-3 py-1.5 font-medium text-gray-60  hover:bg-gray-100"
                 >
                   {post.category.title}
                 </a>
               </div>
               <div className="group relative">
-                <h3 className="mt-3 text-lg font-semibold leading-6 text-gray-900 dark:text-gray-400  group-hover:text-gray-500">
+                <h3 className="mt-3 text-lg font-semibold leading-6 text-black dark:text-gray-400  group-hover:text-gray-600 dark:group-hover:text-gray-500">
                   <a href={post.href}>
                     <span className="absolute inset-0" />
                     {post.title}

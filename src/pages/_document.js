@@ -1,5 +1,5 @@
 import { Html, Head, Main, NextScript } from 'next/document'
-// import { TailwindIndicator } from './components/tailwind-indicator'
+import { TailwindIndicator } from './components/tailwind-indicator'
 
 export default function Document() {
   return (
@@ -7,7 +7,7 @@ export default function Document() {
       <Head />
       <body>
         <Main />
-        {/* <TailwindIndicator/> */}
+        <TailwindIndicator/>
         <NextScript />
       </body>
     </Html>

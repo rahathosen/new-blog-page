@@ -78,7 +78,7 @@ const posts = [
 
 export default function NewsGridAdd() {
   return (
-    <div className="bg-white dark:bg-[#040D12] mt-4 rounded-t-lg pt-4 mb-4 pb-4">
+    <div className="bg-stone-100 dark:bg-[#040D12] mt-4 rounded-t-lg pt-4 mb-4 pb-4">
       <Divider />
       <div>
         {/* <!-- block news --> */}
@@ -90,7 +90,7 @@ export default function NewsGridAdd() {
                 {posts.slice(0,6).map((post) => (
                   <div
                     key={post.id}
-                    className="flex-shrink max-w-full w-full sm:w-1/3 px-3 pb-3 pt-3 sm:pt-0 border-b-2 sm:border-b-0 border-dotted border-gray-800"
+                    className="flex-shrink max-w-full w-full sm:w-1/3 px-3 pb-3 pt-3 sm:pt-0 border-b-2 sm:border-b-0 border-dotted border-gray-900"
                   >
                     <div className="flex flex-row sm:block hover-img">
                       <a href="">
@@ -103,15 +103,15 @@ export default function NewsGridAdd() {
                         />
                       </a>
                       <div className="py-0 sm:py-3 pl-3 sm:pl-0">
-                        <h3 className="text-lg dark:text-gray-400 font-bold leading-tight mb-2">
+                        <h3 className="text-lg text-black dark:text-gray-400 font-bold leading-tight mb-2">
                           <a href="#">
                             {post.title}
                           </a>
                         </h3>
-                        <p className="hidden md:block text-gray-600 dark:text-gray-400 leading-tight mb-1">
+                        <p className="hidden md:block text-gray-800 dark:text-gray-400 leading-tight mb-1">
                          {post.description}
                         </p>
-                        <a className="text-gray-500 dark:text-gray-400" href="#">
+                        <a className="text-gray-800 font-medium dark:text-gray-400" href="#">
                           <span className="inline-block h-3 border-l-2 border-red-600 mr-2"></span>
                          {post.tag}
                         </a>

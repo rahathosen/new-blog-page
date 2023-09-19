@@ -66,7 +66,7 @@ export default function Nav() {
   return (
     <Disclosure
       as="header"
-      className="bg-white dark:bg-[#040D12] rounded-t-lg dark:text-stone-400 shadow-lg  xs:sticky xs:top-0 xs:z-10"
+      className="bg-stone-100 dark:bg-[#040D12] rounded-t-lg dark:text-stone-400 shadow-lg  xs:sticky  xs:top-0 xs:z-10 es:sticky es:top-0 es:z-10"
     >
       {({ open }) => (
         <>
@@ -89,7 +89,7 @@ export default function Nav() {
                   <div className="lg:hidden lg:relative lg:z-10 lg:ml-4 lg:items-center">
                     <button
                       type="button"
-                      className="flex-shrink-0 rounded-full bg-white dark:bg-[#040D12] p-1 text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-500 dark:focus:ring-[#071720] focus:ring-offset-2"
+                      className="flex-shrink-0 rounded-full bg-stone-100 dark:bg-[#040D12] p-1 text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-500 dark:focus:ring-[#071720] focus:ring-offset-2"
                     >
                       <span className="sr-only">View notifications</span>
                       <BellIcon className="h-6 w-6 " aria-hidden="true" />
@@ -118,7 +118,7 @@ export default function Nav() {
               <div className="hidden lg:relative lg:z-10 lg:ml-4 lg:flex lg:items-center">
                 <button
                   type="button"
-                  className="flex-shrink-0 rounded-full bg-white dark:bg-[#040D12] p-1 text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-500 dark:focus:ring-[#071720] focus:ring-offset-2"
+                  className="flex-shrink-0 rounded-full bg-stone-100 dark:bg-[#040D12] p-1 text-gray-600 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-500 dark:focus:ring-[#071720] focus:ring-offset-2"
                 >
                   <span className="sr-only">View notifications</span>
                   <BellIcon className="h-6 w-6 " aria-hidden="true" />
@@ -142,7 +142,7 @@ export default function Nav() {
                 <input
                   id="search"
                   name="search"
-                  className="block w-full rounded-md border-0 bg-white py-1.5 pl-10 pr-3 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                  className="block w-full rounded-md border-0 bg-white dark:bg-[#040D12]  py-1.5 pl-10 pr-3 text-gray-900 dark:text-gray-400 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset dark:focus:ring-[#071720] focus:ring-gray-500 sm:text-sm sm:leading-6"
                   placeholder="Search"
                   type="search"
                 />

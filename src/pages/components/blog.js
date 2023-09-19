@@ -103,9 +103,9 @@ const posts = [
 
 export default function Blog() {
   return (
-    <div className="bg-white dark:bg-[#040D12]  mb-4 rounded-b-lg pb-4 ">
+    <div className="bg-stone-100 dark:bg-[#040D12]  mb-4 rounded-b-lg pb-4 ">
       <Divider />
-      <div className="mx-auto max-w-7xl px-4 lg:px-2">
+      <div className="xl:container mx-auto max-w-7xl px-4 lg:px-2">
         <section
           aria-labelledby="featured-heading"
           className="relative  overflow-hidden rounded-lg lg:h-96"
