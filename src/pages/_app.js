@@ -1,9 +1,11 @@
 import "@/styles/globals.css";
-import { Provider } from "./components/provider";
+
+import { ThemeProvider } from "next-themes";
+
 export default function App({ Component, pageProps, children }) {
   return (
     <>
-      <Provider attribute="class" defaultTheme="system" enableSystem>
+      <ThemeProvider attribute="class" defaultTheme="system" >
         <Component {...pageProps}>
           <main
             className={` bg-white dark:bg-[#040D12] `}
@@ -12,7 +14,7 @@ export default function App({ Component, pageProps, children }) {
           
           </main>
           </Component >
-      </Provider>
+      </ThemeProvider>
     </>
   );
 }

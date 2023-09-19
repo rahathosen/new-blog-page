@@ -66,7 +66,7 @@ export default function Nav() {
   return (
     <Disclosure
       as="header"
-      className="bg-white dark:bg-[#040D12] rounded-t-lg transition-colors duration-300 dark:text-stone-400 shadow-lg  xs:sticky xs:top-0 xs:z-10"
+      className="bg-white dark:bg-[#040D12] rounded-t-lg dark:text-stone-400 shadow-lg  xs:sticky xs:top-0 xs:z-10"
     >
       {({ open }) => (
         <>

@@ -235,13 +235,13 @@ export default function NewsFlexSecond() {
                   <a className="uppercase" href="#">
                     Advertisement
                   </a>
-                  <a href="#">
-                    <img
-                      className="mx-auto"
-                      src="src/img/ads/250.jpg"
-                      alt="advertisement area"
-                    />
-                  </a>
+                  <Image
+                  href="#"
+                  className="mx-auto"
+                  width={300}
+                  height={250}
+                  alt="advertisement area"
+                  />
                 </div>
               </div>
             </div>

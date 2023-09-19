@@ -140,7 +140,7 @@ export default function NewsGridAdd() {
                         height={427}
                         className="mx-auto"
                       />
-                      {/* <img className="mx-auto" src="src/img/ads/250.jpg" alt="advertisement area"/> */}
+                      
                     </a>
                   </div>
                 </div>
