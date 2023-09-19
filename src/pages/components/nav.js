@@ -15,6 +15,7 @@ import {
 import {
   ArrowPathIcon,
   Bars3Icon,
+  Bars3BottomRightIcon,
   ChartPieIcon,
   BellIcon,
   CursorArrowRaysIcon,
@@ -67,7 +68,7 @@ export default function Nav() {
   return (
     <Disclosure
       as="header"
-      className="bg-stone-100 dark:bg-[#040D12] rounded-t-lg dark:text-stone-400 shadow-lg  xs:sticky  xs:top-0 xs:z-10 es:sticky es:top-0 es:z-10"
+      className="bg-stone-100 dark:bg-[#040D12] rounded-t-lg dark:text-stone-400 drop-shadow-2xl xs:sticky  xs:top-0 xs:z-10 es:sticky es:top-0 es:z-10"
     >
       {({ open }) => (
         <>
@@ -101,12 +102,12 @@ export default function Nav() {
               </div>
               <div className="relative z-10 flex items-center lg:hidden">
                 {/* Mobile menu button */}
-                <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-gray-400  hover:bg-gray-100 dark:hover:bg-[#040D12] hover:text-gray-500  focus:outline-none focus:ring-2 focus:ring-inset dark:focus:ring-[#071720] focus:ring-gray-500 ">
+                <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-gray-400  hover:bg-gray-100 dark:hover:bg-[#040D12] hover:text-gray-500  focus:outline-none focus:ring-2 focus:ring-inset dark:focus:ring-[#071720] focus:ring-gray-500/20 ">
                   <span className="sr-only">Open menu</span>
                   {open ? (
                     <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
                   ) : (
-                    <Bars3Icon className="block h-6 w-6" aria-hidden="true" />
+                    <Bars3BottomRightIcon className="block h-6 w-6" aria-hidden="true" />
                   )}
                 </Disclosure.Button>
               </div>
@@ -122,7 +123,7 @@ export default function Nav() {
               </div>
             </div>
           </div>
-          <Disclosure.Panel as="nav" className="lg:hidden shadow-2xl" aria-label="Global">
+          <Disclosure.Panel as="nav" className="lg:hidden shadow-2xl rounded-2xl" aria-label="Global">
             {/* search */}
             <div className="lg:hidden  w-full md:px-7 px-4">
               <label htmlFor="search" className="sr-only">

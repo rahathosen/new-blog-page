@@ -90,7 +90,7 @@ export default function NewsGridAdd() {
                 {posts.slice(0,6).map((post) => (
                   <div
                     key={post.id}
-                    className="flex-shrink max-w-full w-full sm:w-1/3 px-3 pb-3 pt-3 sm:pt-0 border-b-1 sm:border-b-0 border border-gray-200  dark:border-gray-900"
+                    className="flex-shrink max-w-full w-full sm:w-1/3 px-3 pb-3 pt-3 sm:pt-0 border-b-[1px] sm:border-b-0 border-solid border-gray-200 dark:border-gray-900"
                   >
                     <div className="flex flex-row sm:block hover-img">
                       <a href="">
