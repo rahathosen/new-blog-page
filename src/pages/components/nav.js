@@ -71,7 +71,7 @@ export default function Nav() {
     >
       {({ open }) => (
         <>
-          <div className="mx-auto max-w-7xl px-2 sm:px-4 lg:divide-y lg:divide-gray-200 lg:px-8">
+          <div className="mx-auto max-w-7xl px-2 sm:px-4 lg:divide-y lg:divide-gray-200  lg:px-8">
             <div className="relative flex h-16 justify-between">
               <div className=" hidden relative z-10 lg:flex px-2 lg:px-0">
                 <div className="flex flex-shrink-0 items-center">
@@ -122,7 +122,7 @@ export default function Nav() {
               </div>
             </div>
           </div>
-          <Disclosure.Panel as="nav" className="lg:hidden" aria-label="Global">
+          <Disclosure.Panel as="nav" className="lg:hidden shadow-2xl" aria-label="Global">
             {/* search */}
             <div className="lg:hidden  w-full md:px-7 px-4">
               <label htmlFor="search" className="sr-only">
@@ -148,8 +148,8 @@ export default function Nav() {
             {/*  */}
             <div className="space-y-1 px-2 pb-3 pt-2">
               <div>
-                <div className="divide-y divide-gray-500/10 ">
-                  <div className="space-y-2 py-6">
+                <div className="divide-y  divide-gray-500/10 ">
+                  <div className="space-y-2 py-6 ">
                     <Disclosure as="div" className="">
                       {({ open }) => (
                         <>
