@@ -19,7 +19,7 @@ const posts = [
     },
   },
   {
-    id: 1,
+    id: 2,
     title: "BBS data lays bare devastating impact of Covid-19",
     href: "#",
     description:
@@ -36,7 +36,7 @@ const posts = [
     },
   },
   {
-    id: 1,
+    id: 3,
     title: "Govt move to check prices falls flat",
     href: "#",
     description:
@@ -53,7 +53,7 @@ const posts = [
     },
   },
   {
-    id: 1,
+    id: 4,
     title: "BBS data lays bare devastating impact of Covid-19",
     href: "#",
     description:
@@ -70,7 +70,7 @@ const posts = [
     },
   },
   {
-    id: 1,
+    id: 5,
     title: "BBS data lays bare devastating impact of Covid-19",
     href: "#",
     description:
@@ -87,7 +87,7 @@ const posts = [
     },
   },
   {
-    id: 1,
+    id: 6,
     title: "Liquidity stress at Islamic banks shows no sign of abating",
     href: "#",
     description:
@@ -118,39 +118,28 @@ export default function SectionLessImage() {
               className="flex max-w-xl flex-col items-start "
             >
               <div className="flex items-center gap-x-4 text-xs">
-                <time dateTime={post.datetime} className="text-gray-500">
+                <time dateTime={post.datetime} className="text-gray-500 dark:text-gray-400">
                   {post.date}
                 </time>
                 <a
                   href={post.category.href}
-                  className="relative rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100"
+                  className="relative rounded-full bg-gray-50 dark:bg-[#0c2525f8] dark:text-gray-400 px-3 py-1.5 font-medium text-gray-60  hover:bg-gray-100"
                 >
                   {post.category.title}
                 </a>
               </div>
               <div className="group relative">
-                <h3 className="mt-3 text-lg font-semibold leading-6 text-gray-900 dark:text-stone-300 group-hover:text-gray-600">
+                <h3 className="mt-3 text-lg font-semibold leading-6 text-gray-900 dark:text-gray-400  group-hover:text-gray-500">
                   <a href={post.href}>
                     <span className="absolute inset-0" />
                     {post.title}
                   </a>
                 </h3>
-                <p className="mt-5 line-clamp-3 text-sm leading-6 text-gray-600 dark:text-gray-500">
+                <p className="mt-5 line-clamp-3 text-sm leading-6 text-gray-600 dark:text-gray-400">
                   {post.description}
                 </p>
               </div>
-              {/* <div className="relative mt-8 flex items-center gap-x-4">
-                  <img src={post.author.imageUrl} alt="" className="h-10 w-10 rounded-full bg-gray-50" />
-                  <div className="text-sm leading-6">
-                    <p className="font-semibold text-gray-900">
-                      <a href={post.author.href}>
-                        <span className="absolute inset-0" />
-                        {post.author.name}
-                      </a>
-                    </p>
-                    <p className="text-gray-600">{post.author.role}</p>
-                  </div>
-                </div> */}
+             
             </article>
           ))}
         </div>

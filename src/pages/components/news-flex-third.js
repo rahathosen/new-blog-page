@@ -12,8 +12,8 @@ export default function NewsFlexThird() {
             {/* <!-- post --> */}
             <div className="flex-shrink max-w-full w-full lg:w-2/3 overflow-hidden">
               <div className="w-full py-3">
-                {/* <h2 class="text-black lg:text-3xl text-xl font-bold">
-                  <span class="inline-block lg:h-6 h-4 lg:border-l-4 border-l-[3px] border-red-600 mr-2"></span>
+                {/* <h2 className="text-black lg:text-3xl text-xl font-bold">
+                  <span className="inline-block lg:h-6 h-4 lg:border-l-4 border-l-[3px] border-red-600 mr-2"></span>
                   Latest news
                 </h2> */}
               </div>

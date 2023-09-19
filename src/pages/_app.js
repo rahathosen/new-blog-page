@@ -1,6 +1,5 @@
 import "@/styles/globals.css";
 import { Provider } from "./components/provider";
-
 export default function App({ Component, pageProps, children }) {
   return (
     <>
@@ -10,6 +9,7 @@ export default function App({ Component, pageProps, children }) {
             className={` bg-white dark:bg-[#040D12] `}
           >
             {children}
+          
           </main>
           </Component >
       </Provider>

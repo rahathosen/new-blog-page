@@ -11,15 +11,15 @@ const navigation = {
   support: [
     { name: "Pricing", href: "#" },
     { name: "Documentation", href: "#" },
-    { name: "Documentation", href: "#" },
-    { name: "Documentation", href: "#" },
+    { name: "Documentation2", href: "#" },
+    { name: "Documentation3", href: "#" },
   ],
   company: [
     { name: "About", href: "#" },
     { name: "Blog", href: "#" },
-    { name: "Documentation", href: "#" },
+    { name: "Documentation4", href: "#" },
     { name: "Jobs", href: "#" },
-    { name: "Jobs", href: "#" },
+    { name: "Jobs2", href: "#" },
   ],
   legal: [
     { name: "Claim", href: "#" },
@@ -93,11 +93,11 @@ const navigation = {
 
 export default function Footer() {
   return (
-    <footer className="bg-white dark:bg-[#040D12] rounded-lg" aria-labelledby="footer-heading">
+    <footer className="bg-white dark:bg-[#040D12] transition-colors duration-300 rounded-lg" aria-labelledby="footer-heading">
     <h2 id="footer-heading" className="sr-only">
       Footer
     </h2>
-      <div className="mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-2'4 lg:px-8 lg:pt-32">
+      <div className="mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-2 lg:px-8 lg:pt-32">
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
           <div className="space-y-8">
           <h1 className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-400 font-bold text-2xl lg:text-3xl bg-clip-text  tracking-[-0.02em] text-transparent drop-shadow-sm duration-300 ease-linear animate-in zoom-in-50 dark:bg-gradient-to-br dark:from-gray-100 dark:to-gray-900  md:leading-[5rem]">

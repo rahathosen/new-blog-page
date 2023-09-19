@@ -90,92 +90,6 @@ const posts = [
       "https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80",
     date: "Mar 16, 2020",
   },
-  {
-    id: 9,
-    title: "5 Tips to Save Money Booking Your Next Hotel Room",
-    href: "#",
-    tag: "Europe",
-    description:
-      "This is a wider card with supporting text below as a natural lead-in to additional content.",
-    imageUrl:
-      "https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80",
-    date: "Mar 16, 2020",
-  },
-];
-
-const popularPosts = [
-  {
-    id: 1,
-    title: " Why the world would end without political polls",
-    href: "#",
-    date: "Mar 16, 2020",
-  },
-  {
-    id: 2,
-    title: " Meet The Man Who Designed The Ducati Monster",
-    href: "#",
-    date: "Mar 16, 2020",
-  },
-  {
-    id: 3,
-    title: "2020 Audi R8 Spyder spy shots release",
-    href: "#",
-    date: "Mar 16, 2020",
-  },
-  {
-    id: 4,
-    title: " Lamborghini makes Huracán GT3 racer faster for 2019",
-    href: "#",
-    date: "Mar 16, 2020",
-  },
-  {
-    id: 5,
-    title: "ZF plans $14 billion autonomous vehicle push, concept van",
-    href: "#",
-    date: "Mar 16, 2020",
-  },
-  {
-    id: 6,
-    title: " Why the world would end without political polls",
-    href: "#",
-    date: "Mar 16, 2020",
-  },
-  {
-    id: 7,
-    title: " Meet The Man Who Designed The Ducati Monster",
-    href: "#",
-    date: "Mar 16, 2020",
-  },
-  {
-    id: 8,
-    title: "2020 Audi R8 Spyder spy shots release",
-    href: "#",
-    date: "Mar 16, 2020",
-  },
-  {
-    id: 9,
-    title: " Lamborghini makes Huracán GT3 racer faster for 2019",
-    href: "#",
-    date: "Mar 16, 2020",
-  },
-  {
-    id: 10,
-    title: "ZF plans $14 billion autonomous vehicle push, concept van",
-    href: "#",
-    date: "Mar 16, 2020",
-  },
-  {
-    id: 11,
-    title: "ZF plans $14 billion autonomous vehicle push, concept van",
-    href: "#",
-    date: "Mar 16, 2020",
-  },
-  {
-    id: 12,
-    title: "ZF plans $14 billion autonomous vehicle push, concept van",
-    href: "#",
-    date: "Mar 16, 2020",
-  },
 ];
 
 export default function NewsFlexSecond() {
@@ -226,7 +140,7 @@ export default function NewsFlexSecond() {
                     </div>
                   </div>
                 ))}
-                {posts.slice(1, 7).map((post) => (
+                {posts.slice(1, 6).map((post) => (
                   <div
                     key={post.id}
                     className="flex-shrink max-w-full w-full sm:w-1/3 px-3 pb-3 pt-3 sm:pt-0 border-b-2 sm:border-b-0 border-dotted border-gray-100"
@@ -244,13 +158,15 @@ export default function NewsFlexSecond() {
                         />
                       </a>
                       <div className="py-0 sm:py-3 pl-3 sm:pl-0">
-                        <h3 className="text-lg font-bold leading-tight  dark:text-gray-400 mb-2">
-                          <a href="#">{post.title}</a>
+                        <h3 className="text-lg font-bold leading-tight mb-2">
+                          <a href="#">
+                           {post.title}
+                          </a>
                         </h3>
-                        <p className="hidden md:block  dark:text-gray-400 text-gray-600 leading-tight mb-1">
+                        <p className="hidden md:block text-gray-600 leading-tight mb-1">
                           {post.description}
                         </p>
-                        <a className="text-gray-500  dark:text-gray-400" href="#">
+                        <a className="text-gray-500" href="#">
                           <span className="inline-block h-3 border-l-2 border-red-600 mr-2"></span>
                           {post.tag}
                         </a>
@@ -258,31 +174,74 @@ export default function NewsFlexSecond() {
                     </div>
                   </div>
                 ))}
+               
               </div>
             </div>
             {/* <!-- right --> */}
-            <div className="flex-shrink max-w-full w-full lg:w-1/3 lg:pl-8 order-first lg:order-last">
-              <div className="w-full bg-white dark:bg-[#040D12] ">
+            <div className="flex-shrink max-w-full w-full lg:w-1/3 lg:pl-8 lg:pt-14 lg:pb-8 order-first lg:order-last">
+              <div className="w-full bg-white">
                 <div className="mb-6">
-                  <div className="p-4 bg-gray-100 dark:bg-[#071720] rounded-lg">
-                    <h2 className="text-lg font-bold dark:text-gray-400">Most Popular</h2>
+                  <div className="p-4 bg-gray-100">
+                    <h2 className="text-lg font-bold">Most Popular</h2>
                   </div>
                   <ul className="post-number">
-                    {popularPosts.slice(0,12).map((post) => (
-                      <li
-                        key={post.id}
-                        className="border-b border-gray-100 dark:border-gray-900 hover:bg-gray-50 rounded-lg dark:hover:bg-[#030b10]"
+                    <li className="border-b border-gray-100 hover:bg-gray-50">
+                      <a
+                        className="text-lg font-bold px-6 py-3 flex flex-row items-center"
+                        href="#"
                       >
-                        <a
-                          className="text-lg font-bold px-6 py-3 flex flex-row items-center dark:text-gray-400"
-                          href="#"
-                        >
-                         {post.title}
-                        </a>
-                      </li>
-                    ))}
-
+                        Why the world would end without political polls
+                      </a>
+                    </li>
+                    <li className="border-b border-gray-100 hover:bg-gray-50">
+                      <a
+                        className="text-lg font-bold px-6 py-3 flex flex-row items-center"
+                        href="#"
+                      >
+                        Meet The Man Who Designed The Ducati Monster
+                      </a>
+                    </li>
+                    <li className="border-b border-gray-100 hover:bg-gray-50">
+                      <a
+                        className="text-lg font-bold px-6 py-3 flex flex-row items-center"
+                        href="#"
+                      >
+                        2020 Audi R8 Spyder spy shots release
+                      </a>
+                    </li>
+                    <li className="border-b border-gray-100 hover:bg-gray-50">
+                      <a
+                        className="text-lg font-bold px-6 py-3 flex flex-row items-center"
+                        href="#"
+                      >
+                        Lamborghini makes Huracán GT3 racer faster for 2019
+                      </a>
+                    </li>
+                    <li className="border-b border-gray-100 hover:bg-gray-50">
+                      <a
+                        className="text-lg font-bold px-6 py-3 flex flex-row items-center"
+                        href="#"
+                      >
+                        ZF plans $14 billion autonomous vehicle push, concept
+                        van
+                      </a>
+                    </li>
                   </ul>
+                </div>
+              </div>
+
+              <div className="text-sm py-6 sticky">
+                <div className="w-full text-center">
+                  <a className="uppercase" href="#">
+                    Advertisement
+                  </a>
+                  <a href="#">
+                    <img
+                      className="mx-auto"
+                      src="src/img/ads/250.jpg"
+                      alt="advertisement area"
+                    />
+                  </a>
                 </div>
               </div>
             </div>

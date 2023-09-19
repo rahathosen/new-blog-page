@@ -19,22 +19,27 @@ import {
 
 const navItems = [
   {
+    id: 1,
     name: "Sports",
     href: "/sports",
   },
   {
+    id:2 ,
     name: "Business",
     href: "/business",
   },
   {
+    id: 3,
     name: "Life & Living",
     href: "#",
   },
   {
+    id: 4,
     name: "Teach & StartUp",
     href: "#",
   },
   {
+    id: 6,
     name: "Analytics",
     href: "#",
   },
@@ -42,62 +47,73 @@ const navItems = [
 
 const news = [
   {
+    id: 1,
     name: "Analytics",
     description: "Get a better understanding of your traffic",
     href: "#",
     icon: ChartPieIcon,
   },
   {
+    id: 2,
     name: "Engagement",
     description: "Speak directly to your customers",
     href: "#",
     icon: CursorArrowRaysIcon,
   },
   {
+    id: 3,
     name: "Security",
     description: "Your customers’ data will be safe and secure",
     href: "#",
     icon: FingerPrintIcon,
   },
   {
+    id: 4,
     name: "Integrations",
     description: "Connect with third-party tools",
     href: "#",
     icon: SquaresPlusIcon,
   },
   {
+    id: 5,
     name: "Automations",
     description: "Build strategic funnels that will convert",
     href: "#",
     icon: ArrowPathIcon,
   },
 ];
+
 const global = [
   {
+    id: 1,
     name: "Analytics",
     description: "Get a better understanding of your traffic",
     href: "#",
     icon: ChartPieIcon,
   },
   {
+    id: 2,
     name: "Engagement",
     description: "Speak directly to your customers",
     href: "#",
     icon: CursorArrowRaysIcon,
   },
   {
+    id: 3,
     name: "Security",
     description: "Your customers’ data will be safe and secure",
     href: "#",
     icon: FingerPrintIcon,
   },
   {
+    id: 4,
     name: "Integrations",
     description: "Connect with third-party tools",
     href: "#",
     icon: SquaresPlusIcon,
   },
   {
+    id: 5,
     name: "Automations",
     description: "Build strategic funnels that will convert",
     href: "#",
@@ -121,7 +137,7 @@ export default function Header() {
   };
 
   return (
-    <header className="bg-white hidden lg:flex dark:bg-[#040D12] dark:text-neutral-400 lg:sticky lg:rounded-t-lg shadow-md dark:drop-shadow-2xl lg:top-0 lg:z-10">
+    <header className="bg-white hidden lg:flex dark:bg-[#040D12] transition-colors duration-300 dark:text-neutral-400 lg:sticky lg:rounded-t-lg shadow-md dark:drop-shadow-2xl lg:top-0 lg:z-10">
       <nav
         className="mx-auto  flex max-w-7xl items-center justify-center p-6 lg:px-8"
         aria-label="Global"
@@ -148,7 +164,7 @@ export default function Header() {
                 <div className="p-4">
                   {news.map((item) => (
                     <div
-                      key={item.name}
+                      key={item.id}
                       className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50 hover:dark:bg-[#071720]">
                       {/* <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 dark:bg-teal-950 group-hover:bg-white dark:group-hover:bg-[#040D12] ">
                         <item.icon
@@ -209,7 +225,7 @@ export default function Header() {
                 <div className="p-4">
                   {global.map((item) => (
                     <div
-                      key={item.name}
+                      key={item.id}
                       className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50 hover:dark:bg-[#071720]"
                     >
                       
@@ -248,7 +264,7 @@ export default function Header() {
           {navItems.map((item) => (
             <a
               href={item.href}
-              key={item}
+              key={item.id}
               className="text-sm font-semibold leading-6 text-gray-900 dark:text-neutral-400"
             >
               {item.name}

@@ -55,30 +55,6 @@ const products = [
     icon: ArrowPathIcon,
   },
 ];
-const callsToAction = [
-  { name: "Watch demo", href: "#", icon: PlayCircleIcon },
-  { name: "Contact sales", href: "#", icon: PhoneIcon },
-];
-
-const navigation = [
-  { name: "Dashboard", href: "#", current: true },
-  { name: "Team", href: "#", current: false },
-  { name: "Projects", href: "#", current: false },
-  { name: "Calendar", href: "#", current: false },
-  { name: "Calendar", href: "#", current: false },
-  { name: "Team", href: "#", current: false },
-  { name: "Projects", href: "#", current: false },
-  { name: "Projects", href: "#", current: false },
-  { name: "Projects", href: "#", current: false },
-];
-
-const userNavigation = [
-  { name: "Your Profile", href: "#" },
-  { name: "Settings", href: "#" },
-  { name: "Sign out", href: "#" },
-];
-
-
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -90,7 +66,7 @@ export default function Nav() {
   return (
     <Disclosure
       as="header"
-      className="bg-white dark:bg-[#040D12] rounded-t-lg dark:text-stone-400 shadow-lg  xs:sticky xs:top-0 xs:z-10"
+      className="bg-white dark:bg-[#040D12] rounded-t-lg transition-colors duration-300 dark:text-stone-400 shadow-lg  xs:sticky xs:top-0 xs:z-10"
     >
       {({ open }) => (
         <>
@@ -99,7 +75,7 @@ export default function Nav() {
               <div className=" hidden relative z-10 lg:flex px-2 lg:px-0">
                 <div className="flex flex-shrink-0 items-center">
                   <div className="text-sm tracking-tight">
-                  <span className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-400 font-semibold text-sm bg-clip-text text-center font-heading  tracking-[-0.02em] text-transparent drop-shadow-sm duration-300 ease-linear animate-in zoom-in-50 dark:bg-gradient-to-br dark:from-gray-100 dark:to-gray-900  md:leading-[5rem]">
+                  <span className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-400  text-sm bg-clip-text text-center font-heading  tracking-[-0.02em] text-transparent drop-shadow-sm duration-300 ease-linear animate-in zoom-in-50 dark:bg-gradient-to-br dark:from-gray-100 dark:to-gray-900  md:leading-[5rem]">
                   <span className="font-semibold ">Wednesday</span>, September
                     13, 2023
           </span>
@@ -113,7 +89,7 @@ export default function Nav() {
                   <div className="lg:hidden lg:relative lg:z-10 lg:ml-4 lg:items-center">
                     <button
                       type="button"
-                      className="flex-shrink-0 rounded-full bg-white dark:bg-[#040D12] p-1 text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+                      className="flex-shrink-0 rounded-full bg-white dark:bg-[#040D12] p-1 text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-500 dark:focus:ring-[#071720] focus:ring-offset-2"
                     >
                       <span className="sr-only">View notifications</span>
                       <BellIcon className="h-6 w-6 " aria-hidden="true" />
@@ -129,7 +105,7 @@ export default function Nav() {
               </div>
               <div className="relative z-10 flex items-center lg:hidden">
                 {/* Mobile menu button */}
-                <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-gray-400  hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-gray-400  hover:bg-gray-100 dark:hover:bg-[#040D12] hover:text-gray-500  focus:outline-none focus:ring-2 focus:ring-inset dark:focus:ring-[#071720] focus:ring-gray-500 ">
                   <span className="sr-only">Open menu</span>
                   {open ? (
                     <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
@@ -142,7 +118,7 @@ export default function Nav() {
               <div className="hidden lg:relative lg:z-10 lg:ml-4 lg:flex lg:items-center">
                 <button
                   type="button"
-                  className="flex-shrink-0 rounded-full bg-white dark:bg-[#040D12] p-1 text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+                  className="flex-shrink-0 rounded-full bg-white dark:bg-[#040D12] p-1 text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-500 dark:focus:ring-[#071720] focus:ring-offset-2"
                 >
                   <span className="sr-only">View notifications</span>
                   <BellIcon className="h-6 w-6 " aria-hidden="true" />
@@ -173,32 +149,15 @@ export default function Nav() {
               </div>
             </div>
             {/* end search */}
-            {/* navigation */}
-            {/* <div className="space-y-1 px-2 pb-3 pt-2">
-              {navigation.map((item) => (
-                <Disclosure.Button
-                  key={item.name}
-                  as="a"
-                  href={item.href}
-                  className={classNames(
-                    item.current ? 'bg-gray-100 text-gray-900' : 'text-gray-900 hover:bg-gray-50 hover:text-gray-900',
-                    'block rounded-md py-2 px-3 text-base font-medium'
-                  )}
-                  aria-current={item.current ? 'page' : undefined}
-                >
-                  {item.name}
-                </Disclosure.Button>
-              ))}
-            </div> */}
             {/*  */}
             <div className="space-y-1 px-2 pb-3 pt-2">
               <div>
-                <div className="divide-y divide-gray-500/10">
+                <div className="divide-y divide-gray-500/10 ">
                   <div className="space-y-2 py-6">
                     <Disclosure as="div" className="">
                       {({ open }) => (
                         <>
-                          <Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
+                          <Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 dark:text-gray-400 hover:dark:bg-[#071720]">
                             News
                             <ChevronDownIcon
                               className={classNames(
@@ -214,7 +173,7 @@ export default function Nav() {
                                 key={item.name}
                                 as="a"
                                 href={item.href}
-                                className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                                className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50 dark:text-gray-400 hover:dark:bg-[#071720]"
                               >
                                 {item.name}
                               </Disclosure.Button>
@@ -225,19 +184,19 @@ export default function Nav() {
                     </Disclosure>
                     <a
                       href="#"
-                      className=" block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                      className=" block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 dark:text-gray-400 hover:dark:bg-[#071720]"
                     >
                       Features
                     </a>
                     <a
                       href="#"
-                      className=" block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                      className=" block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 dark:text-gray-400 hover:dark:bg-[#071720]"
                     >
                       Marketplace
                     </a>
                     <a
                       href="#"
-                      className=" block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                      className=" block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 dark:text-gray-400 hover:dark:bg-[#071720]"
                     >
                       Company
                     </a>

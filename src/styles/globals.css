@@ -18,17 +18,20 @@
 
 @layer base {
   body {
-    @apply md:p-4 p-4 bg-white dark:bg-black text-gray-700;
+    @apply md:p-4 p-4 bg-white dark:bg-black transition-colors duration-300 text-gray-700;
   }
 }
 
+.bg-cover-imgage{
+  @apply bg-gradient-to-b from-transparent to-black opacity-75;
+}
 @layer components {
   /* custom css start  */
   .bg-gradient-cover {
     background-color: transparent;
       background-image: -webkit-linear-gradient(transparent,rgba(0,0,0,0.92));
-      background-image: linear-gradient(transparent,rgba(0,0,0,0.92));
-      background-position-y: -1px;
+      background-image: linear-gradient(transparent,rgba(32, 32, 32, 0.92));
+      /* background-position-y: -1px; */
   }
   .max-h-98 {
     max-height: 24.3rem;
@@ -57,6 +60,11 @@
 	-webkit-filter: brightness(103%) contrast(103%);
     filter: brightness(103%) contrast(103%);
     opacity:.99;
+}
+.hover-img-dark:hover img {
+	-webkit-filter: brightness(103%) contrast(103%);
+    filter: brightness(103%) contrast(103%);
+    opacity:.69;
 }
  /* custom css end  */
   section {

@@ -40,7 +40,7 @@ const posts = [
     datetime: "2020-03-16",
   },
   {
-    id: 3,
+    id: 4,
     title: "Boost your conversion rate",
     href: "#",
     tag: "Europe",
@@ -61,7 +61,7 @@ export default function HighlightNews() {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="bg-white dark:bg-[#040D12] mt-4 rounded-t-lg pt-4 mb-4 pb-4">
+    <div className="bg-white dark:bg-[#040D12] mt-4 rounded-lg  pt-4 mb-4 pb-4">
       {/* Mobile menu */}
       <main>
         {/* Category section */}
@@ -112,7 +112,7 @@ export default function HighlightNews() {
               {posts.slice(1, 3).map((post) => (
                 <div
                   key={post.id}
-                  className="group aspect-h-1 aspect-w-2 overflow-hidden rounded-md sm:aspect-none sm:relative sm:h-full"
+                  className="group aspect-h-1 aspect-w-2 sm:aspect-none overflow-hidden rounded-md  sm:relative sm:h-full"
                 >
                   <Image
                     src={post.imageUrl}

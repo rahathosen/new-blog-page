@@ -5,7 +5,7 @@ import { useTheme } from "next-themes";
 export default function ThemeToggle() {
   const { theme, setTheme } = useTheme();
   return (
-    <div className="flex border items-center bg-[#fafafa] shado dark:bg-[#040D12] dark:border-[#183D3D] p-2 px-4 w- justify-between rounded-full">
+    <div className="flex border items-center bg-[#fafafa] dark:bg-[#040D12] dark:border-[#0c2525f8] p-2 px-4 justify-between rounded-full">
       <button
         className={`mr-2 p-1 dark:text-zinc-500 text-zinc-700 ${
           theme === "system"
