@@ -178,15 +178,15 @@ const popularPosts = [
   },
 ];
 
-export default function NewsFlexSecond() {
+export default function NewsFlexSecondLeft() {
   return (
     <div className="bg-stone-100 dark:bg-[#040D12] mt-4 rounded-t-lg pt-4 mb-4 pb-4">
       <Divider />
+
       <div>
         <div className="xl:container mx-auto px-3 sm:px-4 xl:px-2">
           <div className="flex flex-row flex-wrap">
-            {/* <!-- Left --> */}
-            <div className="flex-shrink max-w-full w-full lg:w-2/3  overflow-hidden">
+            <div className="flex-shrink max-w-full w-full lg:w-2/3 overflow-hidden">
               <div className="flex flex-row flex-wrap -mx-3">
                 {posts.slice(0, 1).map((post) => (
                   <div
@@ -225,6 +225,7 @@ export default function NewsFlexSecond() {
                     </div>
                   </div>
                 ))}
+
                 {posts.slice(1, 7).map((post) => (
                   <div
                     key={post.id}
@@ -262,13 +263,13 @@ export default function NewsFlexSecond() {
                 ))}
               </div>
             </div>
-            {/* <!-- right --> */}
-            <div className="flex-shrink max-w-full w-full lg:w-1/3 lg:pl-8 order-first lg:order-last">
-              <div className="w-full bg-stone-100 dark:bg-[#040D12] ">
+
+            <div className="flex-shrink max-w-full w-full lg:w-1/3 lg:pr-8 order-first">
+              <div className="w-full bg-stone-100 dark:bg-[#040D12]">
                 <div className="mb-6">
                   <div className="p-4 bg-stone-200 dark:bg-[#071720] rounded-lg">
                     <h2 className="lg:text-xl text-lg font-bold text-black dark:text-gray-400">
-                      Most Popular
+                      Latest news
                     </h2>
                   </div>
                   <ul className="post-number">
@@ -292,6 +293,7 @@ export default function NewsFlexSecond() {
           </div>
         </div>
       </div>
+      {/*  */}
     </div>
   );
 }

@@ -14,6 +14,7 @@ import NewsFlexSecond from './components/news-flex-seond'
 import NewsFlexThird from './components/news-flex-third'
 import NewsGridAdd from './components/news-grid-add'
 import BackToTopButton from './components/BackToTopButton.'
+import NewsFlexSecondLeft from './components/news-flex-seond-left'
 
 const inter = Inter({ subsets: ['latin'] })
 export default function Home() {
@@ -25,14 +26,15 @@ export default function Home() {
      <Header/> 
      {/* <Test/>  */}
      <HighlightNews/>
-     {/* <NewsGrid/> */}
-     <NewsGridSecond/>
-     <NewsGridAdd/>
-     <NewsFlex/>
      <NewsFlexSecond/>
-     {/* <NewsFlexThird/> */}
+     <NewsFlexSecondLeft/>
+     <NewsGridSecond/>
       <SectionLessImage/>
+     <NewsFlex/>
      <Blog/>
+     <NewsGridAdd/>
+     {/* <NewsGrid/> */}
+     {/* <NewsFlexThird/> */}
      <Footer/>
      <BackToTopButton/>
     </div>

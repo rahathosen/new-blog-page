@@ -120,8 +120,8 @@ export default function Blog() {
               className="h-full w-full object-cover object-center"
             />
           </div>
+          
           <div aria-hidden="true" className="relative h-96 w-full lg:hidden" />
-          <div aria-hidden="true" className="relative h-32 w-full lg:hidden" />
           <div className="absolute inset-x-0 bottom-0 rounded-bl-lg rounded-br-lg bg-black bg-opacity-75 p-6 backdrop-blur backdrop-filter sm:flex sm:items-center sm:justify-between lg:inset-x-auto lg:inset-y-0 lg:w-96 lg:flex-col lg:items-start lg:rounded-br-none lg:rounded-tl-lg">
             <div>
               <h2
@@ -149,7 +149,7 @@ export default function Blog() {
           
         </div>
         {/* end Big Post */}
-        <div className="mx-auto  grid max-w-2xl auto-rows-fr grid-cols-1 gap-4 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+        <div className="mx-auto  grid max-w-2xl auto-rows-fr grid-cols-1 gap-4 mt-4 lg:mx-0 lg:max-w-none lg:grid-cols-3">
           {posts.map((post) => (
             <article
               key={post.id}
